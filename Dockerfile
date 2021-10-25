@@ -1,8 +1,8 @@
-FROM ucsdets/datascience-rstudio:2021.3.1
+FROM ucsdets/datascience-rstudio:2021.3-stable
 
 USER root
 
-RUN conda install -c conda-forge r-magick
+RUN conda install -c conda-forge r-magick r-tesseract r-pdftools
 RUN R -e "install.packages( \
         c('tufte', \
           'datasauRus', \
