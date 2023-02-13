@@ -1,4 +1,4 @@
-FROM ucsdets/datascience-rstudio:2021.3-stable
+FROM ucsdets/datascience-rstudio:2023.1-stable
 
 USER root
 
