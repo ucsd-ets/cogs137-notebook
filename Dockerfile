@@ -1,4 +1,4 @@
-FROM ucsdets/rstudio-notebook:2023.1-stable
+FROM ucsdets/datascience-rstudio:2021.3-stable
 
 USER root
 
@@ -11,5 +11,7 @@ RUN R -e "install.packages( \
           'cowplot', \
           'openintro', \
           'mosaicData'), repos='http://cran.rstudio.com/')"
+
+RUN R -e "update.packages()"
 
 USER $NB_USER
