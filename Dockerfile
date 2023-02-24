@@ -10,7 +10,17 @@ RUN R -e "install.packages( \
           'gridExtra', \
           'cowplot', \
           'openintro', \
-          'mosaicData'), repos='http://cran.rstudio.com/')"
+          'mosaicData', \
+          'skimr', \
+          'plm', \
+          'car', \
+          'ggcorrplot', \
+          'GGally', \
+          'ggrepel', \
+          'OCSdata', \
+          'viridis', \
+          'scales', \
+          'srvyr'), repos='http://cran.rstudio.com/')"
 
 # The following `update` command was added while debugging a user's problem that nobody could reproduce,
 # but the resulting image was never published - so it has not proven to be necessary (and could be detrimental,
