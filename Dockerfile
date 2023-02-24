@@ -10,6 +10,16 @@ RUN R -e "install.packages( \
           'gridExtra', \
           'cowplot', \
           'openintro', \
-          'mosaicData'), repos='http://cran.rstudio.com/')"
+          'mosaicData', \
+          'skimr', \
+          'plm', \
+          'car', \
+          'ggcorrplot', \
+          'GGally', \
+          'ggrepel', \
+          'OCSdata', \
+          'viridis', \
+          'scales', \
+          'srvyr'), repos='http://cran.rstudio.com/')"
 
 USER $NB_USER
