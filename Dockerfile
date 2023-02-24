@@ -12,6 +12,6 @@ RUN R -e "install.packages( \
           'openintro', \
           'mosaicData'), repos='http://cran.rstudio.com/')"
 
-RUN R -e "update.packages()"
+RUN R -e "update.packages(repos='http://cran.rstudio.com/')"
 
 USER $NB_USER
