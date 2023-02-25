@@ -13,7 +13,6 @@ RUN R -e "install.packages( \
           'mosaicData', \
           'skimr', \
           'plm', \
-          'car', \
           'ggcorrplot', \
           'GGally', \
           'ggrepel', \
